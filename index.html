@@ -16,24 +16,24 @@ if ( typeof console == 'undefined' ) console = { log: function() {} };
 // Movement Limitations
     MAX_TURN = Math.PI / 2;
     MAX_VELOCITY = 10;
-    MIN_VELOCITY = .1;
+    MIN_VELOCITY = 5;
 
 // Entity drawing
     WEDGE_ANGLE = Math.PI * 0.25;
     ENTITY_SIZE = 9;
 
 // Neural Tuning
-    MAX_NET_LAYERS = 6;
-    NEURONS_PER_LAYER = 6; // Should never be less than number of inputs (currently 4)
+    MAX_NET_LAYERS = 12;
+    NEURONS_PER_LAYER = 12; // Should never be less than number of inputs (currently 4)
     MAX_AXONS = 13;
     MAX_STRENGTH = 12;
     MAX_TRIGGER = 20;
     MIN_TRIGGER = 5;
     MAX_RELAXATION = 99;
-    THOUGHTS_PER_MOVE = 64;
+    THOUGHTS_PER_MOVE = 128;
 
 // Genetics and Population
-    POPULATION_SIZE = 264;
+    POPULATION_SIZE = 40;
     MUTATION_RATE = 1.5;
     MUTATION_DELTA = 4.0;
     PRECISION = 2;
@@ -46,9 +46,9 @@ if ( typeof console == 'undefined' ) console = { log: function() {} };
 // Food, Metabolism, Aging
     MIN_FOOD_SIZE = 2;
     MAX_FOOD_SIZE = 8;
-    FOOD_COUNT = 200;
+    FOOD_COUNT = 20;
     STARVATION_LENGTH = 600;
-    OLD_AGE = 8192;
+    OLD_AGE = 250;
     ENERGY_COST = 1.5;
 
 // World Boundary Handling
