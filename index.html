@@ -10,12 +10,12 @@ if ( typeof console == 'undefined' ) console = { log: function() {} };
 // ===========================================================================================================
 
 // Rendering options
-    SPEED = 10;
+    SPEED = 25;
     SHADOWS = true;
 
 // Movement Limitations
     MAX_TURN = Math.PI / 2;
-    MAX_VELOCITY = 10;
+    MAX_VELOCITY = 20;
     MIN_VELOCITY = 5;
 
 // Entity drawing
@@ -23,14 +23,14 @@ if ( typeof console == 'undefined' ) console = { log: function() {} };
     ENTITY_SIZE = 9;
 
 // Neural Tuning
-    MAX_NET_LAYERS = 12;
-    NEURONS_PER_LAYER = 12; // Should never be less than number of inputs (currently 4)
+    MAX_NET_LAYERS = 4;
+    NEURONS_PER_LAYER = 4; // Should never be less than number of inputs (currently 4)
     MAX_AXONS = 13;
     MAX_STRENGTH = 12;
     MAX_TRIGGER = 20;
     MIN_TRIGGER = 5;
     MAX_RELAXATION = 99;
-    THOUGHTS_PER_MOVE = 128;
+    THOUGHTS_PER_MOVE = 6;
 
 // Genetics and Population
     POPULATION_SIZE = 40;
